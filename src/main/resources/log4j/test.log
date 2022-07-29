@@ -1,0 +1,689 @@
+2022-03-27 11:12:57.677  INFO 20032 --- [main] c.y.t.TuringWebReApplicationTests        : Starting TuringWebReApplicationTests using Java 1.8.0_231 on LAPTOP-N61793HC with PID 20032 (started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:12:57.739 DEBUG 20032 --- [main] c.y.t.TuringWebReApplicationTests        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:12:57.739  INFO 20032 --- [main] c.y.t.TuringWebReApplicationTests        : The following profiles are active: test
+2022-03-27 11:12:59.141  INFO 20032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:12:59.147  INFO 20032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:12:59.209  INFO 20032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:13:02.618  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:13:02.663  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:13:02.664  WARN 20032 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:02.725  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:13:02.786  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:13:02.786  WARN 20032 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:02.837  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:13:02.930  WARN 20032 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:13:02.930  WARN 20032 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:04.023  INFO 20032 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:13:06.651  INFO 20032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a0ee80, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d23a5be, org.springframework.security.web.header.HeaderWriterFilter@52ccf197, org.springframework.security.web.authentication.logout.LogoutFilter@52bc6fcf, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@71de1091, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@726d8fa0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50930bff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25c16cf7, org.springframework.security.web.session.SessionManagementFilter@64b8eb96, org.springframework.security.web.access.ExceptionTranslationFilter@7dfec0bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1764e45e]
+2022-03-27 11:13:06.787  INFO 20032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:13:06.834  INFO 20032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:13:06.896  INFO 20032 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:13:07.224  INFO 20032 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:13:07.314  INFO 20032 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:13:07.352  INFO 20032 --- [main] c.y.t.TuringWebReApplicationTests        : Started TuringWebReApplicationTests in 10.127 seconds (JVM running for 11.688)
+2022-03-27 11:13:32.093  INFO 17124 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 17124 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:13:32.095 DEBUG 17124 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:13:32.095  INFO 17124 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:13:32.890  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:13:32.892  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:13:32.915  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:13:33.308  INFO 17124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:13:33.314  INFO 17124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:13:33.315  INFO 17124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:13:33.441  INFO 17124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:13:33.442  INFO 17124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1306 ms
+2022-03-27 11:13:33.666 DEBUG 17124 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:13:34.719  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:13:34.742  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:13:34.742  WARN 17124 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:34.770  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:13:34.803  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:13:34.803  WARN 17124 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:34.828  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:13:34.874  WARN 17124 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:13:34.874  WARN 17124 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:13:35.221  INFO 17124 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:13:35.529  INFO 17124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11e71181, org.springframework.security.web.context.SecurityContextPersistenceFilter@482f7af0, org.springframework.security.web.header.HeaderWriterFilter@34c62fdf, org.springframework.security.web.authentication.logout.LogoutFilter@2f09e6b2, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@1d6d1d42, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@251a90ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@458031da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342beaf6, org.springframework.security.web.session.SessionManagementFilter@56fda064, org.springframework.security.web.access.ExceptionTranslationFilter@11c581a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9785903]
+2022-03-27 11:13:35.603  INFO 17124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:13:35.604  INFO 17124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:13:35.619  INFO 17124 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:13:35.644  INFO 17124 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:13:35.830  INFO 17124 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:13:35.889  INFO 17124 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:13:35.910  INFO 17124 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 4.283 seconds (JVM running for 5.578)
+2022-03-27 11:13:40.069  INFO 17124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:13:40.070  INFO 17124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:13:40.071  INFO 17124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-27 11:13:52.950  INFO 17124 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-27 11:13:53.105  INFO 17124 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-27 11:13:53.328 DEBUG 17124 --- [http-nio-8080-exec-10] c.y.t.dao.AwardDao.selectCount           : ==>  Preparing: SELECT COUNT( * ) FROM award
+2022-03-27 11:13:53.353 DEBUG 17124 --- [http-nio-8080-exec-10] c.y.t.dao.AwardDao.selectCount           : ==> Parameters: 
+2022-03-27 11:13:53.454 DEBUG 17124 --- [http-nio-8080-exec-10] c.y.t.dao.AwardDao.selectCount           : <==      Total: 1
+2022-03-27 11:13:59.875 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardDao.selectList            : ==>  Preparing: SELECT award_id,award_name,award_time,award_works FROM award
+2022-03-27 11:13:59.876 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardDao.selectList            : ==> Parameters: 
+2022-03-27 11:13:59.885 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardDao.selectList            : <==      Total: 26
+2022-03-27 11:13:59.887 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:13:59.887 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 2(Integer)
+2022-03-27 11:13:59.941 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:13:59.971 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:13:59.972 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 2(Integer)
+2022-03-27 11:14:00.023 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 3
+2022-03-27 11:14:00.024 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.024 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 3(Integer)
+2022-03-27 11:14:00.025 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.027 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.028 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 3(Integer)
+2022-03-27 11:14:00.030 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.031 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.032 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 5(Integer)
+2022-03-27 11:14:00.033 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.035 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.036 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 5(Integer)
+2022-03-27 11:14:00.036 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.037 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.037 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 6(Integer)
+2022-03-27 11:14:00.038 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.040 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.040 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 6(Integer)
+2022-03-27 11:14:00.041 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.042 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.042 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 7(Integer)
+2022-03-27 11:14:00.043 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.046 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.046 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 7(Integer)
+2022-03-27 11:14:00.048 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.049 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.050 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 10(Integer)
+2022-03-27 11:14:00.051 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.053 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.054 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 10(Integer)
+2022-03-27 11:14:00.054 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.055 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.055 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 47(Integer)
+2022-03-27 11:14:00.056 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.058 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.058 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 47(Integer)
+2022-03-27 11:14:00.061 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.064 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.065 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 48(Integer)
+2022-03-27 11:14:00.066 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.067 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.068 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 48(Integer)
+2022-03-27 11:14:00.069 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.069 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.069 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 49(Integer)
+2022-03-27 11:14:00.100 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.102 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectObjs           : ==>  Preparing: SELECT member_name FROM member WHERE (member_student_id = ?)
+2022-03-27 11:14:00.103 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectObjs           : ==> Parameters: 201911611431(String)
+2022-03-27 11:14:00.160 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectObjs           : <==      Total: 1
+2022-03-27 11:14:00.163 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.164 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 49(Integer)
+2022-03-27 11:14:00.165 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.165 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.166 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 50(Integer)
+2022-03-27 11:14:00.167 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.168 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.169 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 50(Integer)
+2022-03-27 11:14:00.169 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.170 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.170 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 51(Integer)
+2022-03-27 11:14:00.171 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.173 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.174 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 51(Integer)
+2022-03-27 11:14:00.174 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 1
+2022-03-27 11:14:00.176 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.176 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 52(Integer)
+2022-03-27 11:14:00.177 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.180 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.181 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 52(Integer)
+2022-03-27 11:14:00.182 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.183 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.183 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 53(Integer)
+2022-03-27 11:14:00.184 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.185 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.186 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 53(Integer)
+2022-03-27 11:14:00.186 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.187 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.187 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 54(Integer)
+2022-03-27 11:14:00.187 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.190 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.190 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 54(Integer)
+2022-03-27 11:14:00.191 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.191 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.192 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 55(Integer)
+2022-03-27 11:14:00.193 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.196 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.197 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 55(Integer)
+2022-03-27 11:14:00.198 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 2
+2022-03-27 11:14:00.198 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.198 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 56(Integer)
+2022-03-27 11:14:00.199 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.201 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.202 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 56(Integer)
+2022-03-27 11:14:00.202 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 2
+2022-03-27 11:14:00.203 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.203 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 57(Integer)
+2022-03-27 11:14:00.204 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.205 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.205 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 57(Integer)
+2022-03-27 11:14:00.206 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.206 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.206 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 58(Integer)
+2022-03-27 11:14:00.207 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.208 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.208 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 58(Integer)
+2022-03-27 11:14:00.210 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.210 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.211 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 59(Integer)
+2022-03-27 11:14:00.211 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.214 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.214 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 59(Integer)
+2022-03-27 11:14:00.215 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.215 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.215 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 60(Integer)
+2022-03-27 11:14:00.216 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.217 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.217 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 60(Integer)
+2022-03-27 11:14:00.218 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.218 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.219 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 61(Integer)
+2022-03-27 11:14:00.219 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.220 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.220 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 61(Integer)
+2022-03-27 11:14:00.221 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.221 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.221 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 62(Integer)
+2022-03-27 11:14:00.221 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.222 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.223 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 62(Integer)
+2022-03-27 11:14:00.223 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.223 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.223 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 63(Integer)
+2022-03-27 11:14:00.224 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 0
+2022-03-27 11:14:00.225 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.225 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 63(Integer)
+2022-03-27 11:14:00.237 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.238 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.238 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 66(Integer)
+2022-03-27 11:14:00.238 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.240 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.241 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 66(Integer)
+2022-03-27 11:14:00.241 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.242 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.242 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 68(Integer)
+2022-03-27 11:14:00.243 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.246 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.247 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 68(Integer)
+2022-03-27 11:14:00.248 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:14:00.249 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==>  Preparing: select member_student_id from member_award where award_id = ?
+2022-03-27 11:14:00.249 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : ==> Parameters: 69(Integer)
+2022-03-27 11:14:00.250 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.d.M.memberAwardTableRecordQuery    : <==      Total: 1
+2022-03-27 11:14:00.252 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==>  Preparing: SELECT award_photo_url FROM award_photo WHERE (award_id = ?)
+2022-03-27 11:14:00.253 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : ==> Parameters: 69(Integer)
+2022-03-27 11:14:00.253 DEBUG 17124 --- [http-nio-8080-exec-5] c.y.t.dao.AwardPhotoDao.selectObjs       : <==      Total: 0
+2022-03-27 11:15:01.371 DEBUG 17124 --- [http-nio-8080-exec-6] c.y.turing_web_re.dao.TeacherDao.insert  : ==>  Preparing: INSERT INTO teacher ( teacher_name, teacher_email, teacher_born, teacher_position, teacher_job, teacher_graduation, teacher_research, teacher_scientific_research, teacher_award_introduction, teacher_img ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-03-27 11:15:01.371 DEBUG 17124 --- [http-nio-8080-exec-6] c.y.turing_web_re.dao.TeacherDao.insert  : ==> Parameters: 阿松大(String), 2111273704@qq.com(String), 广东(String), 萨达(String), 大师(String), 的撒旦(String), 大撒大撒(String), 大碗大苏打(String), dasd(String), E:\test2022/teacherIcons/图片 20.png(String)
+2022-03-27 11:15:01.402 DEBUG 17124 --- [http-nio-8080-exec-6] c.y.turing_web_re.dao.TeacherDao.insert  : <==    Updates: 1
+2022-03-27 11:15:01.404  INFO 17124 --- [http-nio-8080-exec-6] c.y.turing_web_re.utils.TransferUtil     : dir:E:\test2022\teacherIcons
+2022-03-27 11:15:01.437  INFO 17124 --- [http-nio-8080-exec-6] c.y.turing_web_re.utils.TransferUtil     : 单文件传输成功++++,fileName:图片 20.png  sourceDir:teacherIcons    Sun Mar 27 11:15:01 CST 2022
+2022-03-27 11:26:27.225  INFO 22620 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 22620 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:26:27.228 DEBUG 22620 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:26:27.229  INFO 22620 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:26:27.976  INFO 22620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:26:27.977  INFO 22620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:26:27.999  INFO 22620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:26:28.390  INFO 22620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:26:28.396  INFO 22620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:26:28.397  INFO 22620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:26:28.515  INFO 22620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:26:28.516  INFO 22620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
+2022-03-27 11:26:28.728 DEBUG 22620 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:26:29.741  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:26:29.761  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:26:29.761  WARN 22620 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:26:29.788  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:26:29.815  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:26:29.815  WARN 22620 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:26:29.838  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:26:29.877  WARN 22620 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:26:29.878  WARN 22620 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:26:30.194  INFO 22620 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:26:30.465  INFO 22620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4faf1f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3de79067, org.springframework.security.web.header.HeaderWriterFilter@79195c22, org.springframework.security.web.authentication.logout.LogoutFilter@7f22687e, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3c8a7e38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca7e37f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@482f7af0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f811029, org.springframework.security.web.session.SessionManagementFilter@9b367c8, org.springframework.security.web.access.ExceptionTranslationFilter@125f16b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@774d8276]
+2022-03-27 11:26:30.515  INFO 22620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:26:30.516  INFO 22620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:26:30.526  INFO 22620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:26:30.545  INFO 22620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:26:30.700  INFO 22620 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:26:30.756  INFO 22620 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:26:30.776  INFO 22620 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 4.023 seconds (JVM running for 5.066)
+2022-03-27 11:26:36.961  INFO 22620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:26:36.961  INFO 22620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:26:36.962  INFO 22620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-27 11:28:27.010  INFO 22620 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-27 11:28:27.236  INFO 22620 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-27 11:28:27.241 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getUser   : ==>  Preparing: select member_email,member_password from member where member_email = ?
+2022-03-27 11:28:27.260 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getUser   : ==> Parameters: turing(String)
+2022-03-27 11:28:27.277 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getUser   : <==      Total: 1
+2022-03-27 11:28:27.281 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getRole   : ==>  Preparing: SELECT role.role_id , role.role_name , role.role_description FROM role JOIN member ON member.`member_role_id` = role.`role_id` WHERE member_email= ?
+2022-03-27 11:28:27.282 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getRole   : ==> Parameters: turing(String)
+2022-03-27 11:28:27.283 DEBUG 22620 --- [http-nio-8080-exec-1] c.y.turing_web_re.dao.LoginDao.getRole   : <==      Total: 1
+2022-03-27 11:28:32.528 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : ==>  Preparing: select member_email,member_password from member where member_email = ?
+2022-03-27 11:28:32.529 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : ==> Parameters: turing(String)
+2022-03-27 11:28:32.529 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : <==      Total: 1
+2022-03-27 11:28:32.530 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : ==>  Preparing: SELECT role.role_id , role.role_name , role.role_description FROM role JOIN member ON member.`member_role_id` = role.`role_id` WHERE member_email= ?
+2022-03-27 11:28:32.530 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : ==> Parameters: turing(String)
+2022-03-27 11:28:32.531 DEBUG 22620 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : <==      Total: 1
+2022-03-27 11:30:43.668  WARN 22620 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<LF>Field error in object 'loginUser' on field 'memberEmail': rejected value [null]; codes [NotNull.loginUser.memberEmail,NotNull.memberEmail,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUser.memberEmail,memberEmail]; arguments []; default message [memberEmail]]; default message [账号不为空]<LF>Field error in object 'loginUser' on field 'memberPassword': rejected value [null]; codes [NotNull.loginUser.memberPassword,NotNull.memberPassword,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUser.memberPassword,memberPassword]; arguments []; default message [memberPassword]]; default message [密码不为空]]
+2022-03-27 11:30:55.343 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getUser   : ==>  Preparing: select member_email,member_password from member where member_email = ?
+2022-03-27 11:30:55.343 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getUser   : ==> Parameters: turing(String)
+2022-03-27 11:30:55.344 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getUser   : <==      Total: 1
+2022-03-27 11:30:55.344 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getRole   : ==>  Preparing: SELECT role.role_id , role.role_name , role.role_description FROM role JOIN member ON member.`member_role_id` = role.`role_id` WHERE member_email= ?
+2022-03-27 11:30:55.345 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getRole   : ==> Parameters: turing(String)
+2022-03-27 11:30:55.345 DEBUG 22620 --- [http-nio-8080-exec-8] c.y.turing_web_re.dao.LoginDao.getRole   : <==      Total: 1
+2022-03-27 11:33:24.386  INFO 31724 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 31724 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:33:24.389 DEBUG 31724 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:33:24.389  INFO 31724 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:33:25.256  INFO 31724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:33:25.258  INFO 31724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:33:25.280  INFO 31724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:33:25.743  INFO 31724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:33:25.749  INFO 31724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:33:25.749  INFO 31724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:33:25.874  INFO 31724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:33:25.874  INFO 31724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1442 ms
+2022-03-27 11:33:26.116 DEBUG 31724 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:33:27.484  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:33:27.509  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:33:27.509  WARN 31724 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:33:27.543  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:33:27.572  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:33:27.572  WARN 31724 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:33:27.598  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:33:27.640  WARN 31724 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:33:27.641  WARN 31724 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:33:28.204  INFO 31724 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:33:28.553  INFO 31724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4faf1f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3de79067, org.springframework.security.web.header.HeaderWriterFilter@79195c22, org.springframework.security.web.authentication.logout.LogoutFilter@7f22687e, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3c8a7e38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca7e37f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@482f7af0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f811029, org.springframework.security.web.session.SessionManagementFilter@9b367c8, org.springframework.security.web.access.ExceptionTranslationFilter@125f16b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@774d8276]
+2022-03-27 11:33:28.615  INFO 31724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:33:28.616  INFO 31724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:33:28.629  INFO 31724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:33:28.653  INFO 31724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:33:28.815  INFO 31724 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:33:28.872  INFO 31724 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:33:28.895  INFO 31724 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 4.941 seconds (JVM running for 5.941)
+2022-03-27 11:33:29.509  INFO 31724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:33:29.509  INFO 31724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:33:29.511  INFO 31724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-27 11:33:47.022  INFO 31724 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-27 11:33:47.264  INFO 31724 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-27 11:33:47.273 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getUser   : ==>  Preparing: select member_email,member_password from member where member_email = ?
+2022-03-27 11:33:47.295 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getUser   : ==> Parameters: turing(String)
+2022-03-27 11:33:47.313 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getUser   : <==      Total: 1
+2022-03-27 11:33:47.318 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getRole   : ==>  Preparing: SELECT role.role_id , role.role_name , role.role_description FROM role JOIN member ON member.`member_role_id` = role.`role_id` WHERE member_email= ?
+2022-03-27 11:33:47.318 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getRole   : ==> Parameters: turing(String)
+2022-03-27 11:33:47.319 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.LoginDao.getRole   : <==      Total: 1
+2022-03-27 11:35:00.735 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.TeacherDao.insert  : ==>  Preparing: INSERT INTO teacher ( teacher_name, teacher_email, teacher_born, teacher_position, teacher_job, teacher_graduation, teacher_research, teacher_scientific_research, teacher_award_introduction, teacher_img ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-03-27 11:35:00.737 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.TeacherDao.insert  : ==> Parameters: fsas(String), 2111273704@qq.com(String), 广东(String), asfasfas(String), sfafasfas(String), asfasfa(String), fasfasfa(String), asfasfa(String), asfasf(String), E:\test2022/teacherIcons/图片 15.png(String)
+2022-03-27 11:35:00.738 DEBUG 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.dao.TeacherDao.insert  : <==    Updates: 1
+2022-03-27 11:35:00.740  INFO 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.utils.TransferUtil     : dir:E:\test2022\teacherIcons
+2022-03-27 11:35:00.743  INFO 31724 --- [http-nio-8080-exec-3] c.y.turing_web_re.utils.TransferUtil     : 单文件传输成功++++,fileName:图片 15.png  sourceDir:teacherIcons    Sun Mar 27 11:35:00 CST 2022
+2022-03-27 11:36:25.579 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : ==>  Preparing: select member_email,member_password from member where member_email = ?
+2022-03-27 11:36:25.580 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : ==> Parameters: 2111273704@qq.com(String)
+2022-03-27 11:36:25.580 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getUser   : <==      Total: 1
+2022-03-27 11:36:25.581 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : ==>  Preparing: SELECT role.role_id , role.role_name , role.role_description FROM role JOIN member ON member.`member_role_id` = role.`role_id` WHERE member_email= ?
+2022-03-27 11:36:25.581 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : ==> Parameters: 2111273704@qq.com(String)
+2022-03-27 11:36:25.583 DEBUG 31724 --- [http-nio-8080-exec-4] c.y.turing_web_re.dao.LoginDao.getRole   : <==      Total: 1
+2022-03-27 11:38:50.782 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectCount          : ==>  Preparing: SELECT COUNT( * ) FROM member WHERE (member_student_id = ?)
+2022-03-27 11:38:50.782 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectCount          : ==> Parameters: 202211611431(String)
+2022-03-27 11:38:50.783 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.selectCount          : <==      Total: 1
+2022-03-27 11:38:50.787 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.updateById           : ==>  Preparing: UPDATE member SET member_name=?, member_major=?, member_introduction=?, member_after_graduated_destination=?, member_direction=?, member_telephone=?, member_email=?, member_activate_state=?, member_role_id=?, member_nick_name=?, member_department=? WHERE member_student_id=?
+2022-03-27 11:38:50.788 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.updateById           : ==> Parameters: 胡0867(String), 电子1194(String), dsadasd(String), 啊实打实的(String), 后台(String), 13533398036(String), 1067481255@qq.com(String), false(Boolean), 1(Integer), asdasd(String), 电子与信息工程学院(String), 202211611431(String)
+2022-03-27 11:38:50.789 DEBUG 31724 --- [http-nio-8080-exec-5] c.y.t.dao.MemberDao.updateById           : <==    Updates: 1
+2022-03-27 11:39:59.779 ERROR 31724 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.NullPointerException: null
+	at com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter.doFilterInternal(JWTAuthenticationTokenFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-27 11:42:45.970  INFO 30660 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 30660 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:42:45.974 DEBUG 30660 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:42:45.974  INFO 30660 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:42:47.213  INFO 30660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:42:47.215  INFO 30660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:42:47.246  INFO 30660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:42:47.780  INFO 30660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:42:47.791  INFO 30660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:42:47.791  INFO 30660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:42:47.950  INFO 30660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:42:47.951  INFO 30660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1915 ms
+2022-03-27 11:42:48.190 DEBUG 30660 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:42:49.312  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:42:49.332  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:42:49.332  WARN 30660 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:42:49.361  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:42:49.387  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:42:49.387  WARN 30660 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:42:49.409  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:42:49.447  WARN 30660 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:42:49.447  WARN 30660 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:42:49.767  INFO 30660 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:42:50.040  INFO 30660 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9785903, org.springframework.security.web.context.SecurityContextPersistenceFilter@935493d, org.springframework.security.web.header.HeaderWriterFilter@5384ce66, org.springframework.security.web.authentication.logout.LogoutFilter@3344d163, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3003e580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c62fdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4863c8ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34009349, org.springframework.security.web.session.SessionManagementFilter@11c581a0, org.springframework.security.web.access.ExceptionTranslationFilter@245cb8df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b3a01d8]
+2022-03-27 11:42:50.090  INFO 30660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:42:50.091  INFO 30660 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:42:50.100  INFO 30660 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:42:50.120  INFO 30660 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:42:50.254  INFO 30660 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:42:50.300  INFO 30660 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:42:50.318  INFO 30660 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 4.85 seconds (JVM running for 6.018)
+2022-03-27 11:43:00.101  INFO 30660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:43:00.101  INFO 30660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:43:00.104  INFO 30660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-03-27 11:43:01.520 ERROR 30660 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.NullPointerException: null
+	at com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter.doFilterInternal(JWTAuthenticationTokenFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-27 11:46:51.136  INFO 34220 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 34220 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:46:51.138 DEBUG 34220 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:46:51.138  INFO 34220 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:46:52.145  INFO 34220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:46:52.146  INFO 34220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:46:52.171  INFO 34220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:46:52.559  INFO 34220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:46:52.565  INFO 34220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:46:52.565  INFO 34220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:46:52.695  INFO 34220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:46:52.695  INFO 34220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1514 ms
+2022-03-27 11:46:52.918 DEBUG 34220 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:46:53.987  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:46:54.018  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:46:54.018  WARN 34220 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:46:54.053  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:46:54.082  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:46:54.082  WARN 34220 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:46:54.111  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:46:54.145  WARN 34220 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:46:54.145  WARN 34220 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:46:54.448  INFO 34220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:46:54.735  INFO 34220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9785903, org.springframework.security.web.context.SecurityContextPersistenceFilter@935493d, org.springframework.security.web.header.HeaderWriterFilter@5384ce66, org.springframework.security.web.authentication.logout.LogoutFilter@3344d163, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3003e580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c62fdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4863c8ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34009349, org.springframework.security.web.session.SessionManagementFilter@11c581a0, org.springframework.security.web.access.ExceptionTranslationFilter@245cb8df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b3a01d8]
+2022-03-27 11:46:54.786  INFO 34220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:46:54.787  INFO 34220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:46:54.798  INFO 34220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:46:54.818  INFO 34220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:46:54.978  INFO 34220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:46:55.031  INFO 34220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:46:55.056  INFO 34220 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 4.414 seconds (JVM running for 5.594)
+2022-03-27 11:47:02.939  INFO 34220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:47:02.939  INFO 34220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:47:02.941  INFO 34220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-27 11:47:04.331 ERROR 34220 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+com.yantailor.turing_web_re.bean.ErrorMap: 此token已失效，请重新登录(可能是客户端异地登录)
+	at com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter.doFilterInternal(JWTAuthenticationTokenFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-27 11:47:20.293  INFO 29188 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 29188 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:47:20.296 DEBUG 29188 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:47:20.297  INFO 29188 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:47:21.059  INFO 29188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:47:21.061  INFO 29188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:47:21.085  INFO 29188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:47:21.562  INFO 29188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:47:21.569  INFO 29188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:47:21.569  INFO 29188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:47:21.664  INFO 29188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:47:21.665  INFO 29188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2022-03-27 11:47:21.929 DEBUG 29188 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:47:23.005  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:47:23.036  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:47:23.037  WARN 29188 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:47:23.075  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:47:23.114  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:47:23.114  WARN 29188 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:47:23.141  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:47:23.183  WARN 29188 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:47:23.183  WARN 29188 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:47:23.570  INFO 29188 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:47:24.806  INFO 29188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ef4aceb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d9d8e46, org.springframework.security.web.header.HeaderWriterFilter@224d537d, org.springframework.security.web.authentication.logout.LogoutFilter@3ef46749, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3dec3f87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b64f771, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e57b783, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31b650e9, org.springframework.security.web.session.SessionManagementFilter@7e691624, org.springframework.security.web.access.ExceptionTranslationFilter@3dad535f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18d22ecf]
+2022-03-27 11:47:24.927  INFO 29188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:47:24.928  INFO 29188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:47:24.954  INFO 29188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-27 11:47:25.006  INFO 29188 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:47:25.259  INFO 29188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:47:25.319  INFO 29188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:47:25.353  INFO 29188 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 5.665 seconds (JVM running for 6.954)
+2022-03-27 11:47:30.605  INFO 29188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:47:30.605  INFO 29188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:47:30.606  INFO 29188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-27 11:49:00.104 ERROR 29188 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+com.yantailor.turing_web_re.bean.ErrorMap: 此token已失效，请重新登录(可能是客户端异地登录)
+	at com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter.doFilterInternal(JWTAuthenticationTokenFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-27 11:54:36.337  INFO 33716 --- [main] c.y.t.TuringWebReApplication             : Starting TuringWebReApplication using Java 1.8.0_231 on LAPTOP-N61793HC with PID 33716 (D:\IDEA_file_store\turing_web_re\target\classes started by 徐国yan in D:\IDEA_file_store\turing_web_re)
+2022-03-27 11:54:36.339 DEBUG 33716 --- [main] c.y.t.TuringWebReApplication             : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-03-27 11:54:36.339  INFO 33716 --- [main] c.y.t.TuringWebReApplication             : The following profiles are active: test
+2022-03-27 11:54:37.151  INFO 33716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-27 11:54:37.153  INFO 33716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-27 11:54:37.185  INFO 33716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-03-27 11:54:37.686  INFO 33716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-27 11:54:37.694  INFO 33716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-27 11:54:37.694  INFO 33716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-27 11:54:37.842  INFO 33716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-27 11:54:37.843  INFO 33716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1458 ms
+2022-03-27 11:54:38.093 DEBUG 33716 --- [main] c.y.t.f.JWTAuthenticationTokenFilter     : Filter 'JWTAuthenticationTokenFilter' configured for use
+2022-03-27 11:54:39.929  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "awardId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Award"
+2022-03-27 11:54:39.997  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.AwardPhoto".
+2022-03-27 11:54:39.997  WARN 33716 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.AwardPhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:54:40.051  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "informId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.Inform"
+2022-03-27 11:54:40.115  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.Introduction".
+2022-03-27 11:54:40.115  WARN 33716 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.Introduction ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:54:40.163  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "incidentId" is primitive !不建议如此请使用包装类 in Class: "com.yantailor.turing_web_re.entity.LeaderInspectionIncident"
+2022-03-27 11:54:40.314  WARN 33716 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yantailor.turing_web_re.entity.LivePhoto".
+2022-03-27 11:54:40.315  WARN 33716 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.yantailor.turing_web_re.entity.LivePhoto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2022-03-27 11:54:41.150  INFO 33716 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-27 11:54:41.718  INFO 33716 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9785903, org.springframework.security.web.context.SecurityContextPersistenceFilter@935493d, org.springframework.security.web.header.HeaderWriterFilter@5384ce66, org.springframework.security.web.authentication.logout.LogoutFilter@3344d163, com.yantailor.turing_web_re.filter.JWTAuthenticationTokenFilter@3003e580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c62fdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4863c8ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34009349, org.springframework.security.web.session.SessionManagementFilter@11c581a0, org.springframework.security.web.access.ExceptionTranslationFilter@245cb8df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b3a01d8]
+2022-03-27 11:54:41.803  INFO 33716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-27 11:54:41.805  INFO 33716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-27 11:54:41.817  INFO 33716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-03-27 11:54:41.847  INFO 33716 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:54:41.899  INFO 33716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-27 11:54:41.899  INFO 33716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-27 11:54:41.900  INFO 33716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-27 11:54:41.984  INFO 33716 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: resumeInnovateAddUsingPOST_1
+2022-03-27 11:54:42.042  INFO 33716 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-27 11:54:42.196  INFO 33716 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setResumeOpenTimeUsingPOST_1
+2022-03-27 11:54:42.215  INFO 33716 --- [main] c.y.t.TuringWebReApplication             : Started TuringWebReApplication in 6.345 seconds (JVM running for 7.695)
