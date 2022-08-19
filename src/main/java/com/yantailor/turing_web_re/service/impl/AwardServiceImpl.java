@@ -25,6 +25,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -146,13 +147,14 @@ public class AwardServiceImpl extends ServiceImpl<AwardDao, Award> implements Aw
         toAward instance = toAward.INSTANCE;
         for(int i = 0 ; i < awardList.size() ; i++){
             AwardDto awardDto = instance.toAwardDto(awardList.get(i));
-            List<Object> memberNameList = null;
+            List<String> memberNameList =new ArrayList<>();
             List<String> memberStudentIdList = memberDao.memberAwardTableRecordQuery(awardList.get(i).getAwardId());
             for(int j = 0 ; j < memberStudentIdList.size() ; j++){
-                memberNameList = memberDao.selectObjs
+                String name= memberDao.selectOne
                         (new QueryWrapper<Member>().
                                 eq("member_student_id", memberStudentIdList.get(j)).
-                                select("member_name"));
+                                select("member_name")).getMemberName();
+                memberNameList.add(name);
             }
             awardDto.setMemberName((List<String>)(List)memberNameList);
             awardDto.setAwardPhotoUrl((List<String>)(List) awardPhotoDao.selectObjs(new QueryWrapper<AwardPhoto>().eq("award_id", awardList.get(i).getAwardId()).select("award_photo_url")));
@@ -172,8 +174,6 @@ public class AwardServiceImpl extends ServiceImpl<AwardDao, Award> implements Aw
     @Override
     public Long countAward() {
         return baseMapper.selectCount(null);
-
     }
-
 
 }
