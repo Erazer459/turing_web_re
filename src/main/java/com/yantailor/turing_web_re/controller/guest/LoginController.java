@@ -84,5 +84,8 @@ public class LoginController {
     public String hi(){
         return "hi";
     }
-
+    @GetMapping("/getTime")
+    public long getTime(){
+        return System.currentTimeMillis();
+    }
 }
