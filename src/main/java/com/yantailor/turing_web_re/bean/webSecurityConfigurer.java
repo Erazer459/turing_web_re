@@ -69,6 +69,7 @@ public class webSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
 
                 .antMatchers("/guest/**").permitAll()
+                .antMatchers("/turing_website/**").permitAll()
 
 
                 .antMatchers("/admin/*/update").hasAnyRole("user","admin")

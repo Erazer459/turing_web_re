@@ -1,7 +1,10 @@
 package com.yantailor.turing_web_re.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -25,6 +28,19 @@ import java.util.List;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig implements WebMvcConfigurer {
+
+    @Value("${turingweb.savePath}")
+    private String fileSavePath;
+    @Override
+    public void addCorsMappings(CorsRegistry corsRegistry) {
+        corsRegistry.addMapping("/**")
+                .allowedOriginPatterns("*")
+                .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowCredentials(true)
+                .maxAge(3600)
+                .allowedHeaders("*");
+    }
+
     @Bean
     public Docket guestApiDocket(){
         return new Docket(DocumentationType.SWAGGER_2)
@@ -96,5 +112,19 @@ public class SwaggerConfig implements WebMvcConfigurer {
         List<SecurityReference> securityReferences=new ArrayList<>();
         securityReferences.add(new SecurityReference("token", authorizationScopes));
         return securityReferences;
+    }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        registry.addResourceHandler("/turing_website/awardPhoto/**")
+                .addResourceLocations("file:"+fileSavePath+"awardPhoto/");
+        registry.addResourceHandler("/turing_website/introductionVideo/**").addResourceLocations("file:"+fileSavePath+"introductionVideo/");
+        registry.addResourceHandler("/turing_website/leaderInspectionPhoto/**").addResourceLocations("file:"+fileSavePath+"leaderInspectionPhoto/");
+        registry.addResourceHandler("/turing_website/livePhotos/**").addResourceLocations("file:"+fileSavePath+"livePhotos/");
+        registry.addResourceHandler("/turing_website/icon/**").addResourceLocations("file:"+fileSavePath+"icon/");
+        registry.addResourceHandler("/turing_website/memberIcon/**").addResourceLocations("file:"+fileSavePath+"memberIcon/");
+        registry.addResourceHandler("/turing_website/projectSource/**").addResourceLocations("file:"+fileSavePath+"projectSource/");
+        registry.addResourceHandler("/turing_website/teacherIcons/**").addResourceLocations("file:"+fileSavePath+"teacherIcons/");
+        registry.addResourceHandler("/turing_website/resumeSource/**").addResourceLocations("file:"+fileSavePath+"resumeSource/");
     }
 }
