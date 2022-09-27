@@ -36,4 +36,10 @@ public class GuestProjectController {
         }
         return R.ok().data("Projects",projectService.queryProject(page, offset));
     }
+    @GetMapping("queryProjectById")
+    @ApiOperation("通过id查询团队项目详细信息")
+    @ApiImplicitParam(name = "id",value = "团队项目ID")
+    public R queryProjectById(@RequestParam(required = true) int id){
+        return R.ok().data("Project",projectService.queryProjectById(id));
+    }
 }

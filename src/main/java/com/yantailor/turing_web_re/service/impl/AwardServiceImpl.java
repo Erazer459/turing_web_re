@@ -174,8 +174,6 @@ public class AwardServiceImpl extends ServiceImpl<AwardDao, Award> implements Aw
     @Override
     public Long countAward() {
         return baseMapper.selectCount(null);
-
     }
-
 
 }
