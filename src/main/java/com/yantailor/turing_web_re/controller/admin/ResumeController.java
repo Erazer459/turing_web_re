@@ -57,8 +57,8 @@ public class ResumeController {
     @PostMapping("outPutInnovateExcel")
     @ApiOperation("创新组简历导出")
     public R outPutInnovateExcel(){
-        resumeInnovateService.outPutExcel(desPath+"/"+resumeStoreFile+"/resumeInnovate.xls");
-        resumeEntrepreneurshipService.outPutExcel(desPath+"/"+resumeStoreFile+"/resumeEntrepreneurship.xls");
+        resumeInnovateService.outPutExcel("/"+desPath+"/"+resumeStoreFile+"/resumeInnovate.xls");
+        resumeEntrepreneurshipService.outPutExcel("/"+desPath+"/"+resumeStoreFile+"/resumeEntrepreneurship.xls");
         return R.ok().data("创新组Excel生成地址",desPath+"/"+resumeStoreFile+"/resumeInnovate.xls")
                      .data("创业组Excel生成地址", desPath+"/"+resumeStoreFile+"/resumeEntrepreneurship.xls");
     }
@@ -67,7 +67,7 @@ public class ResumeController {
     @GetMapping("/getMobanUrl")
     public R getMobanUrl(){
         return new R().data("创业组模板", desPath+"/"+resumeStoreFile+"/chuangye.docx")
-                      .data("创新组模板", desPath+"/"+resumeStoreFile+"chuangxin.docx");
+                      .data("创新组模板", desPath+"/"+resumeStoreFile+"/chuangxin.docx");
     }
 
     @ApiOperation("设置简历开放时间")

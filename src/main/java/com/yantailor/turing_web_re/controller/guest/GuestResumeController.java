@@ -5,15 +5,19 @@ import com.yantailor.turing_web_re.entity.dto.ResumeEntrepreneurshipDto;
 import com.yantailor.turing_web_re.entity.dto.ResumeInnovateDto;
 import com.yantailor.turing_web_re.service.ResumeEntrepreneurshipService;
 import com.yantailor.turing_web_re.service.ResumeInnovateService;
+import com.yantailor.turing_web_re.utils.FileDownloadUtil;
 import com.yantailor.turing_web_re.utils.RedisUtils;
 import com.yantailor.turing_web_re.utils.ValidationUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import jdk.nashorn.internal.objects.annotations.Optimistic;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 /**
@@ -30,10 +34,13 @@ public class GuestResumeController {
 
     @Autowired
     ResumeInnovateService resumeInnovateService;
+    @Value("${turingweb.resumeStoreFile}")
+    private String resumeStoreFile;
 
+    @Value("${turingweb.desPath}")
+    private String desPath;
     @Autowired
     RedisUtils redisUtils;
-
 
     @PostMapping("resumeInnovateAdd")
     @ApiOperation("创新组内容填写")
@@ -76,9 +83,12 @@ public class GuestResumeController {
         }
         return R.ok().data("resume", resumeInnovateDto);
     }
-
-
-
+    @ApiOperation("面试简历模板下载地址")
+    @GetMapping("getMobanUrl")
+    public R getMobanUrl(){
+        return new R().data("创业组模板", desPath+"/"+resumeStoreFile+"/chuangye.docx")
+                .data("创新组模板", desPath+"/"+resumeStoreFile+"/chuangxin.docx");
+    }
 
 
 
