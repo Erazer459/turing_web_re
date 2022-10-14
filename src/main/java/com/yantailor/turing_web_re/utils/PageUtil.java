@@ -8,8 +8,8 @@ import java.util.List;
  */
 public class PageUtil {
     public static <T> List<T> PageHandler(Integer page , Integer offset , List<T> dtoList){
-        int fromIndex = page*offset;
-        int toIndex = page*offset + offset;
+        int fromIndex = (page-1)*offset;
+        int toIndex = (page-1)*offset + offset;
         if(fromIndex > dtoList.size()){
             return null;
         }
