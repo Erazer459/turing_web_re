@@ -22,7 +22,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Constraint(validatedBy = {MemberDirectionValidator.class})
 public @interface MemberDirectionValid {
     // 默认错误消息
-    String message() default "必须为指定值,前端，后台，自然语言处理，计算机视觉，UI";
+    String message() default "必须为指定值,前端，后台，自然语言处理，计算机视觉,UI";
 
     String[] strValues() default {"前端","后台","自然语言处理","计算机视觉","UI"};
 
